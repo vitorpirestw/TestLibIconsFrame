@@ -8,12 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		79B3E64E25879FAB00522AEA /* TestLibIconsFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 79B3E64C25879FAA00522AEA /* TestLibIconsFrame.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79B3E65625879FDA00522AEA /* TestLibIconsFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B3E65525879FDA00522AEA /* TestLibIconsFrame.swift */; };
+		79B3E65925879FF000522AEA /* IconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B3E65825879FF000522AEA /* IconView.swift */; };
+		79B3E65C2587A00500522AEA /* UIFont+Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B3E65B2587A00500522AEA /* UIFont+Icon.swift */; };
+		79B3E65F2587A01200522AEA /* FontIconStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B3E65E2587A01200522AEA /* FontIconStyle.swift */; };
+		79B3E6622587A02200522AEA /* AssetsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B3E6612587A02200522AEA /* AssetsHelper.swift */; };
+		79B3E6652587A03400522AEA /* FontStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B3E6642587A03400522AEA /* FontStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		79B3E64925879FAA00522AEA /* TestLibIconsFrame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TestLibIconsFrame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		79B3E64C25879FAA00522AEA /* TestLibIconsFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestLibIconsFrame.h; sourceTree = "<group>"; };
 		79B3E64D25879FAB00522AEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79B3E65525879FDA00522AEA /* TestLibIconsFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestLibIconsFrame.swift; sourceTree = "<group>"; };
+		79B3E65825879FF000522AEA /* IconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconView.swift; sourceTree = "<group>"; };
+		79B3E65B2587A00500522AEA /* UIFont+Icon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Icon.swift"; sourceTree = "<group>"; };
+		79B3E65E2587A01200522AEA /* FontIconStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontIconStyle.swift; sourceTree = "<group>"; };
+		79B3E6612587A02200522AEA /* AssetsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsHelper.swift; sourceTree = "<group>"; };
+		79B3E6642587A03400522AEA /* FontStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +60,12 @@
 			children = (
 				79B3E64C25879FAA00522AEA /* TestLibIconsFrame.h */,
 				79B3E64D25879FAB00522AEA /* Info.plist */,
+				79B3E65525879FDA00522AEA /* TestLibIconsFrame.swift */,
+				79B3E65825879FF000522AEA /* IconView.swift */,
+				79B3E65B2587A00500522AEA /* UIFont+Icon.swift */,
+				79B3E65E2587A01200522AEA /* FontIconStyle.swift */,
+				79B3E6612587A02200522AEA /* AssetsHelper.swift */,
+				79B3E6642587A03400522AEA /* FontStyle.swift */,
 			);
 			path = TestLibIconsFrame;
 			sourceTree = "<group>";
@@ -94,6 +112,7 @@
 				TargetAttributes = {
 					79B3E64825879FAA00522AEA = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 					};
 				};
 			};
@@ -130,6 +149,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79B3E65625879FDA00522AEA /* TestLibIconsFrame.swift in Sources */,
+				79B3E6622587A02200522AEA /* AssetsHelper.swift in Sources */,
+				79B3E6652587A03400522AEA /* FontStyle.swift in Sources */,
+				79B3E65925879FF000522AEA /* IconView.swift in Sources */,
+				79B3E65C2587A00500522AEA /* UIFont+Icon.swift in Sources */,
+				79B3E65F2587A01200522AEA /* FontIconStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,7 +213,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -246,7 +271,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -261,6 +286,7 @@
 		79B3E65225879FAB00522AEA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -276,6 +302,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.vitorpires.TestLibIconsFrame;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +311,7 @@
 		79B3E65325879FAB00522AEA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
