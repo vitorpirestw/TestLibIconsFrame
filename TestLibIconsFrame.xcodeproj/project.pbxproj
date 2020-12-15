@@ -15,6 +15,7 @@
 		79B3E65F2587A01200522AEA /* FontIconStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B3E65E2587A01200522AEA /* FontIconStyle.swift */; };
 		79B3E6622587A02200522AEA /* AssetsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B3E6612587A02200522AEA /* AssetsHelper.swift */; };
 		79B3E6652587A03400522AEA /* FontStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B3E6642587A03400522AEA /* FontStyle.swift */; };
+		79B548E32589381F00CA2E20 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 79B3E64D25879FAB00522AEA /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -142,6 +143,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79B548E32589381F00CA2E20 /* Info.plist in Resources */,
 				79409FFA2588142C0017D05F /* natds-icons-ios.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
