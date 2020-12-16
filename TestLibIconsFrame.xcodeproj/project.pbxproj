@@ -15,7 +15,8 @@
 		79B3E65F2587A01200522AEA /* FontIconStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B3E65E2587A01200522AEA /* FontIconStyle.swift */; };
 		79B3E6622587A02200522AEA /* AssetsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B3E6612587A02200522AEA /* AssetsHelper.swift */; };
 		79B3E6652587A03400522AEA /* FontStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B3E6642587A03400522AEA /* FontStyle.swift */; };
-		79B548E32589381F00CA2E20 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 79B3E64D25879FAB00522AEA /* Info.plist */; };
+		79B54B54258A96FB00CA2E20 /* natds-icons-ios.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79409FF92588142C0017D05F /* natds-icons-ios.ttf */; };
+		79B54B57258A970400CA2E20 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 79B3E64D25879FAB00522AEA /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,10 +30,19 @@
 		79B3E65E2587A01200522AEA /* FontIconStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontIconStyle.swift; sourceTree = "<group>"; };
 		79B3E6612587A02200522AEA /* AssetsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsHelper.swift; sourceTree = "<group>"; };
 		79B3E6642587A03400522AEA /* FontStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontStyle.swift; sourceTree = "<group>"; };
+		79B54B4C258A96E700CA2E20 /* Resources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Resources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		79B54B4E258A96E700CA2E20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		79B3E64625879FAA00522AEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79B54B49258A96E700CA2E20 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -46,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				79B3E64B25879FAA00522AEA /* TestLibIconsFrame */,
+				79B54B4D258A96E700CA2E20 /* Resources */,
 				79B3E64A25879FAA00522AEA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				79B3E64925879FAA00522AEA /* TestLibIconsFrame.framework */,
+				79B54B4C258A96E700CA2E20 /* Resources.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -69,9 +81,17 @@
 				79B3E65E2587A01200522AEA /* FontIconStyle.swift */,
 				79B3E6612587A02200522AEA /* AssetsHelper.swift */,
 				79B3E6642587A03400522AEA /* FontStyle.swift */,
-				79409FF92588142C0017D05F /* natds-icons-ios.ttf */,
 			);
 			path = TestLibIconsFrame;
+			sourceTree = "<group>";
+		};
+		79B54B4D258A96E700CA2E20 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				79409FF92588142C0017D05F /* natds-icons-ios.ttf */,
+				79B54B4E258A96E700CA2E20 /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -106,6 +126,23 @@
 			productReference = 79B3E64925879FAA00522AEA /* TestLibIconsFrame.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		79B54B4B258A96E700CA2E20 /* Resources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79B54B4F258A96E700CA2E20 /* Build configuration list for PBXNativeTarget "Resources" */;
+			buildPhases = (
+				79B54B48258A96E700CA2E20 /* Sources */,
+				79B54B49258A96E700CA2E20 /* Frameworks */,
+				79B54B4A258A96E700CA2E20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Resources;
+			productName = Resources;
+			productReference = 79B54B4C258A96E700CA2E20 /* Resources.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -117,6 +154,9 @@
 					79B3E64825879FAA00522AEA = {
 						CreatedOnToolsVersion = 12.2;
 						LastSwiftMigration = 1220;
+					};
+					79B54B4B258A96E700CA2E20 = {
+						CreatedOnToolsVersion = 12.2;
 					};
 				};
 			};
@@ -134,6 +174,7 @@
 			projectRoot = "";
 			targets = (
 				79B3E64825879FAA00522AEA /* TestLibIconsFrame */,
+				79B54B4B258A96E700CA2E20 /* Resources */,
 			);
 		};
 /* End PBXProject section */
@@ -143,8 +184,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79B548E32589381F00CA2E20 /* Info.plist in Resources */,
 				79409FFA2588142C0017D05F /* natds-icons-ios.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79B54B4A258A96E700CA2E20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79B54B57258A970400CA2E20 /* Info.plist in Resources */,
+				79B54B54258A96FB00CA2E20 /* natds-icons-ios.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +210,13 @@
 				79B3E65925879FF000522AEA /* IconView.swift in Sources */,
 				79B3E65C2587A00500522AEA /* UIFont+Icon.swift in Sources */,
 				79B3E65F2587A01200522AEA /* FontIconStyle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79B54B48258A96E700CA2E20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +394,38 @@
 			};
 			name = Release;
 		};
+		79B54B50258A96E700CA2E20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Resources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vitorpires.Resources;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		79B54B51258A96E700CA2E20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Resources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vitorpires.Resources;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -355,6 +443,15 @@
 			buildConfigurations = (
 				79B3E65225879FAB00522AEA /* Debug */,
 				79B3E65325879FAB00522AEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79B54B4F258A96E700CA2E20 /* Build configuration list for PBXNativeTarget "Resources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79B54B50258A96E700CA2E20 /* Debug */,
+				79B54B51258A96E700CA2E20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

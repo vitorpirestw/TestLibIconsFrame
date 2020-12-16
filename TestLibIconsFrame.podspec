@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "TestLibIconsFrame"
-  spec.version      = "1.2"
+  spec.version      = "1.3"
   spec.summary      = "A short description of TestLibIconsFrame."
   spec.description  = <<-DESC
                     Just testing...
@@ -23,4 +23,5 @@ Pod::Spec.new do |spec|
   spec.exclude_files = "Classes/Exclude"
   spec.swift_version = '5.0'
   spec.platform      = :ios, '10.0'
+  spec.ios.resource_bundle = { 'TestLibIconsFrame' => ['Resources/**/*.ttf'] }
 end
