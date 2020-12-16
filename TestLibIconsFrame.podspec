@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "TestLibIconsFrame"
-  spec.version      = "1.3"
+  spec.version      = "1.5"
   spec.summary      = "A short description of TestLibIconsFrame."
   spec.description  = <<-DESC
                     Just testing...
